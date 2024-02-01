@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -n '3p' iacta
+ex +3p -scq! iacta
