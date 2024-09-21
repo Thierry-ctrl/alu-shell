@@ -1,1 +1,2 @@
-# My New Project
+#!/bin/bash
+My New Project
