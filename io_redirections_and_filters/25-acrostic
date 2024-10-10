@@ -1,2 +1,2 @@
 #!/bin/bash
-while read -r line do printf "%s" "${line:0:1}" done < acrostic.txt
+cut -c1 acrostic.txt | tr -d '\n' | xargs -I {} sh -c 'echo "$1"' _ {}
