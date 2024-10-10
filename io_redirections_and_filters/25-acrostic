@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c1 acrostic.txt | tr -d '\n' | xargs -I {} sh -c 'echo "$1"' _ {}
+cut -c1 acrostic.txt | xargs -I {} printf "%s" {} | xargs echo
