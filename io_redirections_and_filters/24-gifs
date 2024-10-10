@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f \( -name '*.gif' -o -name '.*' \) -print0 | xargs -0 -n1 | rev | cut -d'.' -f2- | rev | cut -d'/' -f2- | sort -f | uniq
+find . -type f -name '*.gif' -print0 | xargs -0 -n1 sh -c 'echo "${0##*/}"' | rev | cut -d'.' -f2- | rev | sort -f
