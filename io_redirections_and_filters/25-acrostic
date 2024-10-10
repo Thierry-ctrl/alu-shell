@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c1 acrostic.txt | xargs -I {} printf "%s" {} | xargs echo
+cut -c1 | xargs -I {} printf "%s" {} | xargs echo
