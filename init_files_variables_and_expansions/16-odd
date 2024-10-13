@@ -1,0 +1,8 @@
+#!/bin/bash
+line_number=1
+while read line; do
+  if [[ $((line_number % 2)) -eq 1 ]]; then
+    echo "$line"
+  fi
+  line_number=$((line_number + 1))
+done

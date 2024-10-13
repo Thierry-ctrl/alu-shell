@@ -1,0 +1,4 @@
+#!/bin/bash
+water_value=$(convert_base $STIR stir water)
+result=$(convert_base "$((WATER + water_value))" water bestchol)
+echo "$result"

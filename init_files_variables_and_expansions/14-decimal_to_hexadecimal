@@ -1,0 +1,8 @@
+#!/bin/bash
+hex=""
+while [[ DECIMAL -gt 0 ]]; do
+  remainder=$((DECIMAL % 16))
+  hex=$(printf "%X" "$remainder")$hex
+  DECIMAL=$((DECIMAL / 16))
+done
+echo "$hex"
