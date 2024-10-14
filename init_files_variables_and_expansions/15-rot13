@@ -1,20 +1,2 @@
 #!/bin/bash
-for char in $TEXT; do
-  if [[ "$char" =~ [A-Za-z] ]]; then
-    ascii=$((ord("$char")))
-    if [[ "$char" =~ [A-Z] ]]; then
-      ascii=$((ascii + 13))
-      if [[ ascii -gt 90 ]]; then
-        ascii=$((ascii - 26))
-      fi
-    else
-      ascii=$((ascii + 13))
-      if [[ ascii -gt 122 ]]; then
-        ascii=$((ascii - 26))
-      fi
-    fi
-    char=$(printf "%c" "$ascii")
-  fi
-  echo -n "$char"
-done
-echo
+tr 'A-Za-z' 'N-ZA-Mn-za-m' <<<"$TEXT"

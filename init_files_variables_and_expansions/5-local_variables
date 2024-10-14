@@ -1,4 +1,2 @@
 #!/bin/bash
-for var in $(declare -p); do
-  echo "$var"
-done
+declare -p

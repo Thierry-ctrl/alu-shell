@@ -1,4 +1,2 @@
 #!/bin/bash
-water_value=$(convert_base $STIR stir water)
-result=$(convert_base "$((WATER + water_value))" water bestchol)
-echo "$result"
+echo "ibase=$stir_base; obase=$water_base; $STIR" | bc | xargs -I{} echo "ibase=$water_base; obase=$bestchol_base; $WATER + {}" | bc
