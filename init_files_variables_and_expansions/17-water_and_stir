@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(( $(echo "$WATER" | tr 'water' '01234') + $(echo "$STIR" | tr 'stir' '0123') ))
+echo $(echo "obase=bestchol; $(echo "ibase=5; $WATER + $STIR" | tr 'waterstir' '012345')" | bc)
