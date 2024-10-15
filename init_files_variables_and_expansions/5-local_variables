@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 set -o posix |set| declare -F
+=======
+(env | awk '{print $1}')$(declare -F | awk '{print $3}')
+>>>>>>> 25aed33a5258df4936a4be309ecfd759db36a94e
