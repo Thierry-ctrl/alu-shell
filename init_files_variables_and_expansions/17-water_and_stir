@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "ibase=$stir_base; obase=$water_base; $STIR" | bc | xargs -I{} echo "ibase=$water_base; obase=$bestchol_base; $WATER + {}" | bc
+echo $(( $(echo "$WATER" | tr 'water' '01234') + $(echo "$STIR" | tr 'stir' '0123') ))
