@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'BEGIN { for (i = "a"; i <= "z"; ++i) for (j = "a"; j <= "z"; ++j) if (i != "o" || j != "o") print i j }'
+echo {a..z}{a..z} | tr " " "\n" | grep -v "oo"
