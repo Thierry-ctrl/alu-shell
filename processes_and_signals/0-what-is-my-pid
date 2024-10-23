@@ -1,4 +1,4 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
+#This script displays its ownd PID 
 echo $$  # $$ is a special variable that contains the PID of the script itself
 
