@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo $$  # $$ is a special variable that contains the PID of the script itself
+
