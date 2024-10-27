@@ -1,5 +1,3 @@
-#!/bin/bash
-#Using a bash script that stops 4-to_infinity_and_beyond
-for pid in $(pgrep -f 4-to_infinity_and_beyond); do
-    kill $pid
-done
+#!/usr/bin/env bash
+#script that stopd --- process without using kill
+pkill -f beyond
