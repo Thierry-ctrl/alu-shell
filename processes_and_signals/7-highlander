@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
+#script that displays 4 indefinitely with 2 in btwn 
 
-trap 'echo "I am invincible!!!"' SIGTERM
-
+trap 'echo "I am invincible!!!"' 15
 while true; do
-    echo "To infinity and beyond"
+    echo "to infinity and beyond"
     sleep 2
 done
